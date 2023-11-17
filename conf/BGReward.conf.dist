@@ -29,7 +29,7 @@
 #        	     1  - (Enable)
 #
 
-Battleground.Reward.Enable = 0
+Battleground.Reward.Enable = 1
 
 #
 #    Battleground.Reward.WinnerTeam.Count
@@ -55,7 +55,7 @@ Battleground.Reward.LoserTeam.Count = 1
 #       Default: 20558
 #
 
-Battleground.Reward.ItemID.WS = 20558
+Battleground.Reward.ItemID.WS = 69999
 
 #
 #    Battleground.Reward.ItemID.AB
@@ -64,7 +64,7 @@ Battleground.Reward.ItemID.WS = 20558
 #       Default: 20559
 #
 
-Battleground.Reward.ItemID.AB = 20559
+Battleground.Reward.ItemID.AB = 69999
 
 #
 #    Battleground.Reward.ItemID.EY
@@ -73,7 +73,7 @@ Battleground.Reward.ItemID.AB = 20559
 #       Default: 29024
 #
 
-Battleground.Reward.ItemID.EY = 29024
+Battleground.Reward.ItemID.EY = 69999
 
 #
 #    Battleground.Reward.ItemID.IC
@@ -82,7 +82,7 @@ Battleground.Reward.ItemID.EY = 29024
 #       Default: 47395
 #
 
-Battleground.Reward.ItemID.IC = 47395
+Battleground.Reward.ItemID.IC = 69999
 
 #
 #    Battleground.Reward.ItemID.SA
@@ -91,7 +91,7 @@ Battleground.Reward.ItemID.IC = 47395
 #       Default: 42425
 #
 
-Battleground.Reward.ItemID.SA = 42425
+Battleground.Reward.ItemID.SA = 69999
 
 #
 #    Battleground.Reward.ItemID.AV
@@ -100,7 +100,7 @@ Battleground.Reward.ItemID.SA = 42425
 #       Default: 20560
 #
 
-Battleground.Reward.ItemID.AV = 20560
+Battleground.Reward.ItemID.AV = 69999
 
 #
 ###################################################################################################
@@ -142,7 +142,7 @@ Arena.Reward.LoserTeam.Count = 1
 #       Default: 29434
 #
 
-Arena.Reward.Winner.ItemID.2v2 = 29434
+Arena.Reward.Winner.ItemID.2v2 = 69999
 
 #
 #    Arena.Reward.Loser.ItemID.2v2
@@ -151,7 +151,7 @@ Arena.Reward.Winner.ItemID.2v2 = 29434
 #       Default: 29434
 #
 
-Arena.Reward.Loser.ItemID.2v2 = 29434
+Arena.Reward.Loser.ItemID.2v2 = 69999
 
 #
 #    Arena.Reward.Winner.ItemID.3v3
@@ -160,7 +160,7 @@ Arena.Reward.Loser.ItemID.2v2 = 29434
 #       Default: 29434
 #
 
-Arena.Reward.Winner.ItemID.3v3 = 29434
+Arena.Reward.Winner.ItemID.3v3 = 69999
 
 #
 #    Arena.Reward.Loser.ItemID.3v3
@@ -169,7 +169,7 @@ Arena.Reward.Winner.ItemID.3v3 = 29434
 #       Default: 29434
 #
 
-Arena.Reward.Loser.ItemID.3v3 = 29434
+Arena.Reward.Loser.ItemID.3v3 = 69999
 
 #
 #    Arena.Reward.Winner.ItemID.5v5
@@ -178,7 +178,7 @@ Arena.Reward.Loser.ItemID.3v3 = 29434
 #       Default: 29434
 #
 
-Arena.Reward.Winner.ItemID.5v5 = 29434
+Arena.Reward.Winner.ItemID.5v5 = 69999
 
 #
 #    Arena.Reward.Loser.ItemID.5v5
@@ -187,7 +187,7 @@ Arena.Reward.Winner.ItemID.5v5 = 29434
 #       Default: 29434
 #
 
-Arena.Reward.Loser.ItemID.5v5 = 29434
+Arena.Reward.Loser.ItemID.5v5 = 69999
 
 #
 ###################################################################################################

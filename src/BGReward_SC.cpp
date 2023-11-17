@@ -27,35 +27,62 @@ public:
 
     void OnBattlegroundEndReward(Battleground* bg, Player* player, TeamId winnerTeamId) override
     {
+        uint8 level = player -> getLevel();
+        if(level < 80) {
+            return ;
+        }
+
+        bool isAfk = player->isAFK();
+        if(isAfk) {
+            return ;
+        }
+
+        uint32 random = urand(0, 100);
+        if(random < 20) {
+            return ;
+        }
+        int rewards[] = {
+            69999, 69001, 69002, 
+            69003, 69003, 69003, 69004, 69004, 
+            69005, 69005, 69005, 69006, 69006, 
+            69007, 69007, 69007, 69008, 69008
+        };
+        int len = sizeof(rewards) / sizeof(*rewards);
+        int32 itemId = int32(rewards[random % len]);
+
         TeamId bgTeamId = player->GetBgTeamId();
         uint32 RewardCount = 0;
 
-        if (sConfigMgr->GetOption<bool>("Battleground.Reward.Enable", true) && !bg->isArena())
+        if (sConfigMgr->GetOption<bool>("Battleground.Reward.Enable", true) && !bg->isArena() && itemId)
         {
             if (bgTeamId == winnerTeamId)
                 RewardCount = sConfigMgr->GetOption<int32>("Battleground.Reward.WinnerTeam.Count", 2);
             else
                 RewardCount = sConfigMgr->GetOption<int32>("Battleground.Reward.LoserTeam.Count", 1);
 
+            if(itemId == 69002) {
+                RewardCount = 1;
+            }
+
             switch (player->GetZoneId())
             {
                 case 3277:
-                    player->AddItem(sConfigMgr->GetOption<int32>("Battleground.Reward.ItemID.WS", 20558), RewardCount);
+                    player->AddItem(itemId, RewardCount);
                     break;
                 case 3358:
-                    player->AddItem(sConfigMgr->GetOption<int32>("Battleground.Reward.ItemID.AB", 20559), RewardCount);
+                    player->AddItem(itemId, RewardCount);
                     break;
                 case 3820:
-                    player->AddItem(sConfigMgr->GetOption<int32>("Battleground.Reward.ItemID.EY", 29024), RewardCount);
+                    player->AddItem(itemId, RewardCount);
                     break;
                 case 4710:
-                    player->AddItem(sConfigMgr->GetOption<int32>("Battleground.Reward.ItemID.IC", 47395), RewardCount);
+                    player->AddItem(itemId, RewardCount);
                     break;
                 case 4384:
-                    player->AddItem(sConfigMgr->GetOption<int32>("Battleground.Reward.ItemID.SA", 42425), RewardCount);
+                    player->AddItem(itemId, RewardCount);
                     break;
                 case 2597:
-                    player->AddItem(sConfigMgr->GetOption<int32>("Battleground.Reward.ItemID.AV", 20560), RewardCount);
+                    player->AddItem(itemId, RewardCount);
                     break;
                 default:
                     break;
